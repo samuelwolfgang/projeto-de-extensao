@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Como o Software Livre pode beneficiar uma sociedade?</title>
+	<style>
+		body{width: 90em; 
+			margin: auto; 
+			font-size: 1.2em;}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="Projeto de Extesão do Samuel Wolfgang, realizado pela Universidade Unopar."/>
+	<meta name="author" content="Samuel Wolfgang de Jesus Santos"/>
+	<meta name="keywords" content="projeto, samuel, wolfgang, gnu, linux, software, livre, open, filosofia"/>
+	<link rel="icon" href="img/icon.png"/>
+</head>
+
+<body>
+	<h1 style="text-align: center;">Como o Software Livre pode beneficiar uma sociedade?</h1>
+	<hr>
+	<h2>Tópicos</h2>
+	<span style="font-size: 1.2em;">
+	<ul>
+		<li><a href="#projeto-ext">Sobre o Projeto de Extensão</a></li>
+		<li><a href="#computer">O que é um Computador?</a></li>
+		<li><a href="#gnu">O que é GNU?</a></li>
+		<li><a href="#linux">O que é Linux?</a></li>
+		<li><a href="#gnu-linux">O que é GNU/Linux?</a></li>
+		<li><a href="#licenca">Introdução básica as Licenças</a></li>
+		<li><a href="#software-livre">O que é Software Livre?</a></li>
+		<li><a href="#open-livre">Software livre x Código Aberto</a></li>
+		<li><a href="#recomendacoes">Recomendações</a></li>
+		<li><a href="#referencias">Referências</a></li>
+	</ul>
+	</span>
+	<hr>
+		<h2 id="projeto-ext">Sobre o Projeto de Extensão</h2>
+			<p>Esta palestra está ocorrendo devido ao Projeto de Extensão do meu atual Curso Superior de Tecnologia, no caso, Análise e Desenvolvimento de Sistemas fornenico pela Universidade UNOPAR.</p>
+			<p>Os objetivos da extensão está vinculado ao Programa de Contexto à Comunidade estão relacionados com a disseminação do saber da área de ciências para a comunidade local, prestando serviços a questões pedagógicas, aulas de monitoria, educação básica, educação financeira, língua estrangeira, recursos naturais, ética e responsabilidade social. Tais ações visam a transferência de conhecimento acadêmico para a comunidade, preparando o egresso para uma atuação global, focado não apenas no conhecimento técnico, mas com a preocupação pelo próximo e por um sociedade igualitária, buscando oportunizar conhecimento para quem não tem oportunidade de acesso.</p>
+			<p>Antes mesmo de definir o tema que será trabalhado, o mesmo solicita que exploremos os <a href="https://brasil.un.org/pt-br/sdgs"target="_blank">Objetivos de Desenvolvimento Sustentável (ODS)</a> da Organização das Nações Unidas (ONU) e trabalhe encima de uma das causas proposta por tal.</p>
+			<p>A proposta que eu escolhi foi do Tópico:</p>
+				<li>9 - Indústria, inovação e infraestrutura - Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação.</li>
+			<p>Sendo a Meta:</p>
+				<li>9.b - Apoiar o desenvolvimento tecnológico, a pesquisa e a inovação nacionais nos países em desenvolvimento, inclusive garantindo um ambiente político propício para, entre outras coisas, a diversificação industrial e a agregação de valor às commodities.</li>
+			<p>Tendo em vista esta meta, decide realizar uma palestra sobre o desenvolvimento de Softwares Livres e interagir com o público como tal método de desenvolvimento pode estar contribuindo com a sociedade em qual nós vivemos.</p>
+			<p>A Empresa/Orquestra que decidiu contemplar esse projeto extensionista foi a Sanbone Pagode Orquestra. Para quem não conhece a Sanbone Pagode Orquestra é uma Orquestra que mistura música popular com erudita. Basicamente, uma quebradeira com uma harmonia plural e diversificada.</p>
+			A Sanbone Pagode Orquestra lançou no ano de 2018 seu primeiro album, “Sinfonias de Pagode”. Este Álbum traz consigo oito composições do multi-instrumentista, compositor e maestro <a href="https://www.hugosanbone.com/" target="_blank">Hugo Sanbone</a>, idealizador da Orquestra, sempre apostando na conciliação das claves (matrizes rítmicas) do pagode com criações melódicas e harmônicas no campo da música erudita. Disponível em:</p>
+			<ul>
+				<li><a href="https://open.spotify.com/intl-pt/artist/0QSeAcsTKfVHmz7VWNImjV" target="_blank">Spotify</a></li>
+				<li><a href="https://www.youtube.com/channel/UCV8Bn3BKlflShd-hqSwg_Bg" target="_blank">Youtube</a></li>
+				<li><a href="https://music.youtube.com/channel/UCV8Bn3BKlflShd-hqSwg_Bg" target="_blank">Youtube Music</a></li>
+				<li><a href="https://www.deezer.com/pt/artist/57456962" target="_blank">Deezer</a></li>
+				<li><a href="https://music.apple.com/br/artist/sanbone-pagode-orquestra/1449301061" target="_blank">Apple Music</a></li>
+			</ul>
+
+
+	<hr>
+		<h2 id="computer">O que é um Computador?</h2>
+			<p>Um computador é basicamente é uma super calculadora, onde nesses cálculos conseguimos moldar os números para criar programas interativos e semelhante nossa vida.</p>
+		
+		<h3>O que é Hardware e Software</h3>
+			<li>Hardware é a parte física da máquina (Memória RAM, HD, SSD, Fonte)</li>
+			<li>Software é a parte lógica da máquina, no caso os programas.</li>
+			
+		<h3>Funções/Composição Básicas de um Computador</h3>
+		<h4>Entrada de dados</h4>
+			<p>Dispositivos que fornecem informações para serem processadas.<br>
+			Exemplo:</p>
+			<ul>
+				<li>Teclado</li>
+				<li>Mouse</li>
+				<li>Microfone</li>
+			</ul>
+			
+		<h4>Processamento de dados - Unidade Central de Processamento (CPU)</h4>
+			<p>As três partes mais importantes da CPU são:</p>
+			<li>Unidade Aritmética e Lógica (ULA) - executa operações aritméticas do computador e as operações lógicas</li>
+			<li>Unidade de Controle (UC) - Apresenta uma alta complexidade em relação à CPU, pois, controla todas as ações da ULA e instruções direcionadas para o processamento.</li>
+			<li>Registradores - É uma memória de maior relevância do computador, situado no core (núcleo) do computador. É a memória mais veloz do computador.</li>
+		
+		<h4>Armazenamento de Informação</h4>
+			<p>Memória Volátio - É um dispositivo de armazenamento temporário.<br>
+			Exemplo:</p> 
+			<ul>
+				<li>Memória RAM</li>
+				<li>Memória Cache</li>
+			</ul>
+			<p>Dispositivos de armazenamento não volátil, que podem armazenar dados para serem recuperados quando necessário. Pode ser por tipo magnéticos, ópticos e por meios eletrônicos.<br> 
+			Exemplo:
+			<ul>
+				<li>HD -> Magnéticos</li>
+				<li>CD-ROM -> Ópticos</li>
+				<li>SSD -> Meios eletrônicos.</li>
+			</ul>
+			
+		<h4>Saída de informação</h4>
+			<p>São os dispositivos que retornam tudo que for processado pelo computador, no caso, tudo que acontece entre a interação entre o computador e usuário.<br>
+			Exemplo:</p>
+			<ul>
+				<li>Monitor</li>
+				<li>Impressora</li>
+				<li>Fones de Ouvidos</li>
+			</ul>
+			
+		<h3>Arquitetura de von Neumann</h3>
+			<p>É uma arquitetura de computador criada em 1975 por John von Neumann, se caracteriza pela possibilidade de um computador armazenar seus programas no mesmo espaço de memória, podendo assim manipular os programas.</p>
+		<p>Basicamente a máquina proposta por Von Neumann é composta por tais componentes:</p>
+			<li>Memória</li>
+			<li>Unidade Aritmética e Lógica > Entrada e Saída</li>
+			<li>Unidade de Controle</li>
+
+		<h3>Sistema Operacional</h3>
+			<p>Sistema operacional é um software, ou conjunto de software que fica responsável por controlar o computador, tendo por objetivo gerenciar os recursos de hardware e fazer a interação entre o hardware e o software. Logo, a responsabilidade de realizar à administração de todos os recursos da máquina não fica para o usuário, facilitando o seu uso.</p>
+	<hr>
+		<h2 id="gnu">O que é GNU?</h2>
+			<p>O sistema operacional GNU é um sistema de software livre, compatível com o Unix, criado por Richard Stallman no ano de 1983. GNU significa “GNU's Not Unix” (GNU Não é Unix).</p>
+			<p>Mencionando que, UNIX é um sistema operacional estável, multi-usuário, multi-tasking para servidores que foi desenvolvido na década de 1960 utilizando as linguagens C e Assembly, e tem estado em constante desenvolvimento desde então.</p>
+			<p>O projeto que desenvolve o sistema GNU é chamado de “Projeto GNU”, sendo concebido em 1983 como uma maneira de trazer de volta o espírito cooperativo que prevalecia na comunidade de computação nos seus primórdios, tendo em vista também remover os obstáculos impostos pelos donos de software privativo. Pois, na década de 1980, quase todo o software era privativo, significando que ele possuía donos que proibiam e evitavam a cooperação dos usuários. Tendo em vista este cenário, o Projeto GNU tornou-se necessário.</p>
+			<p>Com o Projeto GNU em andamento, os responsáveis decidiram criar um sistema operacional compatível com o Unix, pois seu design geral já era testado e portável, gerando também uma certa compatibilidade que facilitaria os usuários de Unix migrem para o GNU.</p>
+			<p>Um sistema operacional do tipo Unix inclui um kernel (núcleo do sistema), compiladores (ponte entre a linguagem de programação para linguagem de máquina), editores, formatadores de texto, clientes de e-mail, interfaces gráficas, bibliotecas, jogos e muitas outras coisas. A Free Software Foundation foi fundada em outubro de 1985, inicialmente para levantar fundos para ajudar a desenvolver o GNU.</p>
+			<p>Por volta de 1990 os membros do projeto haviam encontrado ou escrito todos os componentes principais do sistema operacional, exceto um, o Kernel. Então o Linux, um kernel do tipo Unix, foi desenvolvido por Linus Torvalds em 1991 e transformado em software livre em 1992.</p>
+			<p>Descrito pelos mesmos, combinar o Linux com o quase completo sistema GNU resultou num sistema operacional completo: o sistema GNU/Linux.</p>
+			<p>Estimativas apontam que dezenas de milhões de pessoas hoje usam sistemas GNU/Linux, tipicamente através de distribuições GNU/Linux.</p>
+			<p>A versão principal do Linux hoje em dia contém firmware não livre, sendo assim, ativistas do software livre mantém uma versão do Linux modificada e livre, criado em 2008 por um brasileiro chamado Alexandre Oliva, o kernel em questão chama-se Linux-libre.</p>
+	<hr>
+		<h2 id="linux">O que é Linux?</h2>
+			<p>Desenvolvido pelo programador finlandês Linus Torvalds, inspirado no sistema Minix em 17 de Setembro de 1991, Linux é um clone do sistema operacional Unix, escrito do zero por Linus Torvalds com a ajuda de uma equipe pouco unida de hackers em toda a Internet.</p>
+			<p>Ele tem todos os recursos que você esperaria de um Unix moderno e completo, incluindo multitarefa verdadeira, memória virtual, bibliotecas compartilhadas, carregamento sob demanda, executáveis de cópia na gravação compartilhados, gerenciamento de memória adequado e rede multistack, incluindo IPv4 e IPv6.</p>
+			<p>Embora originalmente desenvolvido primeiro para PCs baseados em x86 de 32 bits (386 ou superior), hoje o Linux também roda em uma infinidade de outras arquiteturas de processador, em variantes de 32 e 64 bits.</p>
+			<p>O desenvolvimento do Linux é um dos exemplos mais proeminentes de colaboração de software livre e de código aberto. O código-fonte pode ser usado, modificado e distribuído — com fins comerciais ou não — por qualquer um, respeitando as licenças, como a GNU General Public License versão 2, devolvendo o código desenvolvido de volta para o desenvolvimento do núcleo.</p>
+	<hr>
+		<h2 id="gnu-linux">O que é GNU/Linux?</h2>
+			<p>A maioria das distribuições do sistema operacional com base no Linux como kernel são basicamente versões modificadas do sistema operacional GNU.</p>
+			<p>O objetivo principal e contínuo do GNU é oferecer um sistema compatível com o Unix que seria 100% software livre.</p>
+			<p>O sistema operacional GNU e o kernel do Linux são projetos de software separados que fazem trabalhos complementares. Normalmente eles são empacotados em uma distribuição GNU/Linux e usados em conjunto.</p>
+			<p>Tendo em vista a visão do Richard Stallman:<br>
+			&emsp;“Quando as pessoas chamam todo o sistema de “Linux”, como consequência, eles chamam todo o sistema com o mesmo nome do kernel. Isso causa muitos tipos de confusão, porque apenas os especialistas conseguem dizer se uma declaração é sobre o kernel ou todo o sistema. Ao chamar todo o sistema “GNU/Linux” e chamar o kernel de “Linux”, evita-se a ambiguidade.”</p>
+	<hr>
+		<h2 id="licenca">Introdução básica as Licenças</h2>
+			<p>Uma licença de software, é uma definição de ações autorizadas (ou proibidas), no âmbito do direito de um programador de software de computador concedidas (ou impostas) ao usuário deste software.</p>
+			<p>Quando uma licença acrescenta restrições para além das existentes no direito de autor, o usuário tem normalmente de aceitar que lhe sejam impostas estas restrições para poder utilizar legalmente o software, sendo está uma das diferenças entre uma licença de software livre e uma licença de software não-livre.</p>
+			<p>Software publicado deve ser software livre. Para fazê-lo software livre, você precisa lançá-lo sob uma licença de software livre. Nós normalmente usamos a Licença Pública Geral GNU (GNU GPL), especificando versão 3 ou qualquer outra versão posterior, mas ocasionalmente nós usamos outras licenças de software livre. Nós usamos somente licenças que são compatíveis com a GNU GPL para software GNU.</p>
+			<p>Documentação para software livre deve ser documentação livre, então as pessoas podem redistribui-la e melhorá-la como o software é descrito. Para fazê-lo uma documentação livre, você precisa lançá-lo sob uma licença de documentação livre. Nós normalmente usamos a Licença de Documentação Livre GNU (GNU FDL), mas ocasionalmente nós usamos outras licenças de documentação livre.</p>
+	<hr>	
+		<h2 id="software-livre">O que é Software Livre?</h2>
+			<p>Antes de tudo no mundo do “software livre”, devemos entender software, como o algo que respeita a liberdade e senso de comunidade dos usuários. Grosso modo, isso significa que os usuários possuem a liberdade de executar, copiar, distribuir, estudar, mudar e melhorar o software. Assim sendo, “software livre” é uma questão de liberdade, não de preço. </p>
+			<p>Para entender o conceito, devemos pensar em “liberdade de expressão” e não em “cerveja grátis”.</p>
+			<p>Basicamente, para ser um Software Livre, ele deve possuir quatro liberdades essenciais, que no caso são:</p>
+			<ul>
+				<li>(liberdade 0) - A liberdade de executar o programa como você desejar, para qualquer propósito.</li>
+				<li>(liberdade 1) - A liberdade de estudar como o programa funciona, e adaptá-lo às suas necessidades.</li>
+				<li>(liberdade 2) - A liberdade de redistribuir cópias de modo que você possa ajudar outros.</li>
+				<li>(liberdade 3) - A liberdade de distribuir cópias de suas versões modificadas a outros.</li>
+			</ul>
+	<hr>
+		<h2 id="open-livre">Software livre x Código Aberto</h2>
+			<p>Os termos “software livre” e “código aberto” representam quase a mesma gama de programas. No entanto, essas filosofias dizem coisas profundamente diferentes sobre esses programas, com base em valores diferentes.</p>
+			<p>O movimento do software livre faz campanha pela liberdade para os usuários da computação; é um movimento pela liberdade e pela justiça. Por outro lado, a ideia de código aberto valoriza principalmente a vantagem prática e não faz campanha por princípios. É por isso que não concordamos com o código aberto e não usamos esse termo.</p>
+			<p>Os dois termos descrevem quase a mesma categoria de software, porém eles referem-se a visões baseadas em valores fundamentalmente diferentes, filosofia de vidas de fato.</p>
+			<p>Para o movimento do software livre, o software livre é um imperativo ético, com respeito essencial à liberdade dos usuários. Em contrapartida, a filosofia do código aberto considera os problemas em termos de como tornar o software “melhor” – e, um sentido prático apenas.</p>
+	<hr>
+		<h2 id="recomendacoes">Recomendações</h2>
+		<ul>
+			<li><a href="https://youtu.be/Ag1AKIl_2GM" target="_blank">Free software, free society: Richard Stallman at TEDxGeneva 2014</a></li>
+			<li><a href="https://youtu.be/av0urrdeC3g" target="_blank">InProprietário O Mundo do Software Livre - Documentário Sobre Linux</a></li>
+		</ul>
+
+		<h2 id="referencias">Referências</h2>
+		<ul>
+			<li>Objetivos de Desenvolvimento Sustentável. Nações Unidas Brasil. Disponível em: <a href="https://brasil.un.org/pt-br/sdgs" target="_blank">https://brasil.un.org/pt-br/sdgs</a></li>
+			<li>O Sistema Operacional GNU. GNU, 1983-2023. Dísponivel em: <a href="https://www.gnu.org/" target="_blank">https://www.gnu.org/</a></li>
+			<li>Arquitetura de von Neumann. Wikipédia, a enciclopédia livre, 2001-2023. Disponível em: <a href="https://pt.wikipedia.org/wiki/Arquitetura_de_von_Neumann" target="_blank">https://pt.wikipedia.org/wiki/Arquitetura_de_von_Neumann</a></li>
+			<li>UNIX Introduction. Iowa State University, 1995-2020. Dísponivel em: <a href="https://www.hpc.iastate.edu/guides/unix-introduction#:~:text=What%20is%20UNIX%3F,for%20servers%2C%20desktops%20and%20laptops" target="_blank">https://www.hpc.iastate.edu/guides/unix-introduction#:~:text=What%20is%20UNIX%3F,for%20servers%2C%20desktops%20and%20laptops</a></li>
+			<li>Linux. Wikipédia, a enciclopédia livre, 2001-2023. Disponível em: <a href="https://en.wikipedia.org/wiki/Linux" target="_blank">https://en.wikipedia.org/wiki/Linux</a></li>
+			<li>Licença de software. Wikipédia, a enciclopédia livre, 2001-2023. Disponível em: <a href="https://pt.wikipedia.org/wiki/Licen%C3%A7a_de_software" target="_blank">https://pt.wikipedia.org/wiki/Licen%C3%A7a_de_software</a></li>
+			<li>Ficheiro:Gnu-and-penguin-color.png. Wikipédia, a enciclopédia livre, 2001-2023. Disponível em: <a href="https://pt.m.wikipedia.org/wiki/Ficheiro:Gnu-and-penguin-color.png" target="_blank">https://pt.m.wikipedia.org/wiki/Ficheiro:Gnu-and-penguin-color.png</a></li>
+			<li>Cynthia da Silva Barbosa. Sistemas Operacionais. Editora e Distribuidora Educacional S.A. 2018.</li>
+		</ul>
+	<hr>
+	<footer style="text-align: left;">Projeto de Extesão da Univerdade Unopar | Samuel Wolfgang</footer>
+</body>
+</html>
